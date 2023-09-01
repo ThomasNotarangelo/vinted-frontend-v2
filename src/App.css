@@ -1,8 +1,12 @@
 /* HEADER */
 
-Header {
+.header-container {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 1280px;
+  margin: auto;
+  padding: 10px 0;
 }
 
 .vinted-logo {
@@ -31,4 +35,93 @@ Header {
   transform: translateY(-50%);
   pointer-events: none;
   color: #bbbbbb;
+}
+
+.header-button {
+  height: 30px;
+  width: 115px;
+  border: 1px solid #2cb1ba;
+  border-radius: 5px;
+  font-size: 12px;
+  outline: none;
+}
+
+.button-login-signup {
+  background-color: white;
+  color: #2cb1ba;
+}
+
+.button-signup {
+  margin-right: 20px;
+}
+
+.button-sold {
+  background-color: #2cb1ba;
+  color: white;
+}
+/* MAIN */
+
+/* SECTION 1 */
+
+/* SECTION 2 */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offerList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* border: 1px solid black; */
+}
+
+.article {
+  width: 200px;
+  /* height: 400px; */
+  padding: 10px;
+  /* align-self: stretch; */
+  /* border: 1px solid black; */
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 5px;
+  /* align-self: stretch; */
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.username {
+  font-weight: bold;
+  font-size: 15px;
+}
+.productImg {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* HOME *************** */
+.home-hero {
+  background-image: url("./assets/hero.jpg");
+  height: 455px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-hero-forme {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 80px;
+  pointer-events: none;
 }
